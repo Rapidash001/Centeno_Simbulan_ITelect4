@@ -21,7 +21,7 @@
                     <div class="card">
                         <div class="card-header"> 
                             <!-- may problema pa dito -->
-                            <a class="btn btn-info" action="{{ route('employee.create') }}">New Employee</a>
+                            <a class="btn btn-info" href="{{ route('employee.create') }}">New Employee</a>
 
                                 <div class="card-tools">
                                     <div class="input-group input-group-sm" style="width: 150px;">
