@@ -19,15 +19,16 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">
-                            <a class="btn btn-info">New Employee</a>
+                        <div class="card-header"> 
+                            <!-- may problema pa dito -->
+                            <a class="btn btn-info" action="{{ route('employee.create') }}">New Employee</a>
 
                                 <div class="card-tools">
                                     <div class="input-group input-group-sm" style="width: 150px;">
                                         <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
                                             <div class="input-group-append">
-                                                <button type="submit" class="btn btn-default">
+                                                <button type="submit" class="btn btn-default" >
                                                     <i class="fas fa-search"></i>
                                                 </button>
                                             </div>
@@ -49,8 +50,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($employees as $items)
                                     <tr> 
-                                        @foreach($employees as $items)
+                                        
                                         <td>{{$items -> id}}</td>
                                         <td>{{$items -> fname}}</td>
                                         <td>{{$items -> lname}}</td>
@@ -63,8 +65,9 @@
                                                 <span class="badge bg-danger"><a class="btn btn-danger mx-3"><h5>Delete</h5></a></span>
                                         </td>  
                                         
-                                        @endforeach
+                                        
                                     </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
