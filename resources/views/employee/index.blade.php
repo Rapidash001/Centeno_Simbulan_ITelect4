@@ -52,7 +52,7 @@
                                 <tbody>
                                     @foreach($employees as $items)
                                     <tr> 
-                                        
+                                        <!-- wala nakalimutan koto to yung may class ata to deba -->
                                         <td>{{$items -> id}}</td>
                                         <td>{{$items -> fname}}</td>
                                         <td>{{$items -> lname}}</td>

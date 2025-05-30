@@ -28,6 +28,8 @@ Route::middleware('auth')->group(function () {
     //dito sau
     //end of employee management
 
+    //aken yung store at create ginawa mo,vbkuhbdbhadbuk
+
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 });
