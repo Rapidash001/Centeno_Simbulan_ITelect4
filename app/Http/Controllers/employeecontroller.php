@@ -37,12 +37,7 @@ class employeecontroller extends Controller
      public function edit(int $id)
     {   
         $employees = employee::find($id);
-        return view ('employee.index', compact('employees'));
-    }
-
-    public function update()
-    {
-    return view ('employee.index');
+        return view ('employee.edit', compact('employees'));
     }
     //di ako sure dito dong dami nga walaT= T_T
 
